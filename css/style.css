@@ -481,3 +481,62 @@ ul.collapsed {
         width: 100%;
     }
 }
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+
+    .footer .col {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    /* Boxes stack vertically */
+    .box {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Page contents and about contents stack vertically */
+    .pagecontents,
+    .aboutcontents {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+    }
+
+    /* Contact section stacks */
+    .contact {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+    }
+
+    /* Gallery columns full width */
+    .column {
+        flex-basis: 100% !important;
+    }
+
+    /* Menu items full width */
+    .menu li {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* Top image full width */
+    .top-image {
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    /* Text boxes stack */
+    .text-box {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Page title smaller font */
+    .page-title {
+        font-size: 28px;
+        padding: 20px 0;
+    }
+}
